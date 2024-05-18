@@ -28,6 +28,7 @@ const config = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        'logo-cloud': 'logo-cloud 30s linear infinite', 
       },
       keyframes: {
         spotlight: {
@@ -40,7 +41,12 @@ const config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 4rem))' },
+        },
       },
+
     },
   },
   plugins: [addVariablesForColors],
