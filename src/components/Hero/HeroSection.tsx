@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link";
 import { Spotlight } from "../ui/Spotlight";
-// import { Button } from "./ui/moving-border"
+import { Button } from "../ui/moving-border"
+import Blockchains from "../Blockchains/Blockchains";
 
 
 
@@ -38,9 +40,10 @@ const logos = [
 
 const HeroSection = () => {
   return (
+    <>
     <div
       className="h-auto md:h-[40rem] w-full rounded-md 
-    flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
+    flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 "
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -48,7 +51,7 @@ const HeroSection = () => {
       />
       <div className="p-4 relative z-10 w-full text-center">
         <h1
-          className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text
+          className="mt-20 md:mt-10 text-4xl md:text-7xl font-bold bg-clip-text
         text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
         >
           Master the art of Blockchain
@@ -73,12 +76,14 @@ const HeroSection = () => {
         </div> */}
 
         <div className="mt-4">
-          <button className="p-[3px] relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-            <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-              Explore
-            </div>
-          </button>
+        <div>
+      <Button
+        borderRadius="1.75rem"
+        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 font-medium"
+      >
+      Explore
+      </Button>
+    </div>
         </div>
       </div>
 
@@ -112,9 +117,13 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-
-
     </div>
+
+      <div>
+        <Blockchains/>
+      </div>
+
+    </>
   );
 };
 
