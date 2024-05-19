@@ -25,9 +25,10 @@ function Blockchains() {
       </motion.h1>
     </LampContainer>
 
-    <div className='bg-black'>
-      </div>
-    <CardContainer className="inter-var">
+<div className='flex justify-between items-center mx-auto bg-black gap-x-2'>
+
+  
+    <CardContainer className="inter-var ml-[50px]">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -87,6 +88,8 @@ function Blockchains() {
       <p className="text-sm border font-light dark:border-white/[0.2] border-black/[0.2] rounded-full mt-4 text-black dark:text-white px-2 py-0.5">
         Watch me hover
       </p>
+    </div>
+
     </div>
 
     </div>
