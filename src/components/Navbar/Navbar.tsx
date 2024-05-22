@@ -58,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
           </Link>
 
           {/* MenuItem with dropdown */}
-          <MenuItem
+          {/* <MenuItem
             setActive={handleMenuHover}
             active={active}
             item="Resources"
@@ -69,7 +69,14 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
               <HoveredLink href="/courses">Advanced Composition</HoveredLink>
               <HoveredLink href="/courses">Production</HoveredLink>
             </div>
-          </MenuItem>
+          </MenuItem> */}
+
+         <Link
+            href="/contact"
+            className="hover:text-gray-400 transition-colors"
+          >
+           Resources
+          </Link>
 
           <Link
             href="/contact"
