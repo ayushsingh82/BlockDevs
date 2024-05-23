@@ -1,9 +1,10 @@
+"use client"
 import React from 'react'
 
 function page() {
   return (
     <div className='flex flex-col  items-center bg-slate-900  '>
-    <h1 className='text-4xl font-semibold mt-[40px] text-pink-500 mt-[100px]'>Starter learning about chainlink </h1>
+    <h1 className='text-4xl font-semibold mt-[40px] text-pink-500 mt-[150px]'>Starter learning about chainlink </h1>
     <h3 className='mt-[20px] text-white text-xl'>Chainlink is the decentralized computing platform powering the verifiable web
     <br/>Chainlink is driven by a large open-source community of data providers,
     <br/>node operators, smart contract developers, researchers, security auditors, and more
