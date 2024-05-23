@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import { EvervaultCard, Icon } from "../ui/evervault-card";
+// Adjust the import path as needed
 
 const Header = () => (
   <LampContainer>
@@ -23,6 +24,21 @@ const Header = () => (
     </motion.h1>
   </LampContainer>
 );
+
+const items = [
+  {
+    title: "Chainlink CCIP",
+    description:
+      "A secure interoperability protocol for powering token transfers and sending arbitrary messages cross-chain. You can use CCIP to transfer data, tokens, or both data and tokens across chains.",
+    link: "#",
+  },
+  {
+    title: "VRF",
+    description:
+      "Chainlink VRF provides cryptographically secure randomness for your blockchain-based applications. Randomness is very difficult to generate on blockchains. The solution to this issue is Chainlink VRF.",
+    link: "#",
+  },
+];
 
 const ChainlinkCard = () => (
   <CardContainer className="inter-var ml-[50px]">
@@ -79,7 +95,7 @@ const EvervaultInfoCard = () => (
 
 function Blockchains() {
   return (
-    <div className="">
+    <div>
       <Header />
       <div className="flex justify-between items-center mx-auto bg-black gap-x-2">
         <ChainlinkCard />

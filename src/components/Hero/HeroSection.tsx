@@ -7,15 +7,7 @@ import Blockchains from "../Blockchains/Blockchains";
 const logos = [
   {
     name: "Chainlink",
-    url: "https://ibb.co/MN8Rd3t",
-  },
-  {
-    name: "Nextjs",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg",
-  },
-  {
-    name: "Prime",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg",
+    url: "https://assets-global.website-files.com/5f6b7190899f41fb70882d08/5f760a499b56c47b8fa74fbb_chainlink-logo.svg",
   },
 ];
 
@@ -45,16 +37,6 @@ const HeroSection = () => {
             blockchain journey today.Whether you are beginner or looking to
             refine your skills ,join us to unlock your true potential
           </p>
-          {/* <div className="mt-4">
-             <Link href={"/courses"}>
-                <Button
-                borderRadius="1.75rem"
-                className="bg-white dark:bg-black text-black dark:text-white
-                border-neutral-200 dark:border-slate-800">
-                Explore Courses
-                </Button>
-             </Link>
-        </div> */}
 
           <div className="mt-4">
             <div>
